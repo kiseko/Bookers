@@ -1,4 +1,6 @@
-<p>title:<%= @book.title %></p>
-<p>body:<%= @book.body %></p>
-<%= link_to "edit", edit_book_path(@book.id) %>
-<%= link_to "back", books_path %>
+<section class="show">
+  <p class="title"><strong>title</strong>:<%= @book.title %></p>
+  <p class="body"><strong>body</strong>:<%= @book.body %></p>
+  <%= link_to "Edit", edit_book_path(@book.id) %>
+  <%= link_to "Back", books_path %>
+</section>
