@@ -73,6 +73,7 @@ li {
 .error-box {
   width: 450px;
   border: solid 2px #c00;
+  margin-top: 4px;
 }
 
 .error-text {
@@ -85,6 +86,10 @@ li {
   padding: 30px;
 }
 
-.title, .body {
+.title, .body, .notice {
   margin-bottom: 25px;
+}
+
+.notice {
+  color: #008000;
 }

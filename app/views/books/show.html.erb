@@ -1,4 +1,10 @@
 <section class="show">
+
+<% if flash[:notice] %>
+  <p class="notice"><%= flash[:notice] %></p>
+<% end %>
+
+  </p>
   <p class="title"><strong>title</strong>:<%= @book.title %></p>
   <p class="body"><strong>body</strong>:<%= @book.body %></p>
   <%= link_to "Edit", edit_book_path(@book.id) %>
